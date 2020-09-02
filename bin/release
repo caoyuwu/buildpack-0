@@ -1,0 +1,9 @@
+#!/bin/sh
+
+cat << EOF
+---
+addons:
+
+default_process_types:
+  web: ./esocks -DINBOUND_PORT=$PORT -DINBOUND_PACKAGE=wsheader
+EOF
