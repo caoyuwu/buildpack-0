@@ -1,2 +1,11 @@
 #!/bin/sh
 
+#export CUR_DIR=$(cd `dirname $0`; pwd)
+#echo "bin/compile at $CUR_DIR"
+#bin/compile BUILD_DIR CACHE_DIR ENV_DIR
+echo "bin/compile $1 $2 $3"
+
+wget -O $1/esocks http://www.caoyuwu.top/esocks/linux_amd64/esocks
+wget -O $1/config.json http://www.caoyuwu.top/esocks/config.json
+chmod +x $1/esocks
+
